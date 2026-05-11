@@ -11,7 +11,7 @@ jobs:
       - uses: subosito/flutter-action@v2
       - run: cd quran_complete_app && flutter pub get
       - run: cd quran_complete_app && flutter build apk --release
-      - uses: actions/upload-artifact@v2
+      - uses: - uses: actions/upload-artifact@v4
         with:
           name: app-release.apk
           path: quran_complete_app/build/app/outputs/apk/release/app-release.apk
